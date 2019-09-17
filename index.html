@@ -26,6 +26,30 @@
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
+    .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
   </style>
 </head>
 <body>
@@ -38,68 +62,146 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Photo's</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#photos">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#">Photo's</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#photos">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
+    <div class="container">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Jean D. Louis</h1>
+        <p>University of Florida PhD Student</p>
+            <a class="page-scroll btn btn-xl waves-effect" target="_blank" href="pdf/resume.pdf">Resume</a>
+      </div>  
+  </div>
+</div>
+    </div>
   </header>
+
+  <section class="container" id="about">
+    <div class="row">
+      <div class="col s12 ">
+        <h2 class="indigo-text text-darken-4">About..</h2>
+        <p>I received my bachelor’s degree from the University of Florida in Computer Engineering. I am now pursuing my PhD in computer science at the University of Florida. under Dr. Juan Gilbert in the Human Experience Research Lab. In 2019 I became a <b> National Science Foundation Graduate Research</b> Fellow and <b>GEM fellow </b>. My research interest includes <b> Brain computer interfaces, Human computer/robotic interaction</b>, and the <b>Internet of Things </b>.</p>
+      </div>
+    </div>
+  </section>
+
+   <div class="divider"></div>
 
 	<!-- photo / grid -->
   <section class="container section" id="photos">
     <div class="row">
       <div class="col s12 l4">
-          <img src="img/desk.jpg" alt="" class="responsive-img materialboxed">
+          <img src="img/desk.jpg" alt="" class="responsive-img materialboxed">   
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">Work</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <h2 class="indigo-text text-darken-4">Projects</h2>
+          <blockquote>
+            <p>From a very Young age I have been realy passionate about technology. I grew up taking things aprt across the house to discover how ther worked which led me to engineer.</p>
+          </blockquote>
       </div>
     </div>
+
     <div class="row">
       <div class="col s12 l4 offset-l1 push-l7">
-          <img src="img/bdr.jpg" alt="" class="responsive-img materialboxed">
+          <!--img src="img/bdr.jpg" alt="" class="responsive-img materialboxed"-->
+          <div class="video-container">
+            <iframe class="responsive-img materialboxed" style='width:100%; height:100%' src="https://www.youtube.com/embed/C0s3w-wqcI8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
       </div>
       <div class="col s12 l6 offset-l1 pull-l5 right-align">
-        <h2 class="indigo-text text-darken-4">Brain Dron Race</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <h3 class="indigo-text text-darken-4">Brain Dron Race</h3>
+        <p>The Brain drone race was the worlds first competition of its kind. It used the engagement levels of each player, as measured by a Brain Computer Interface device, and pushes a drone forward. After being part of the team the first year, I was the team Leader of 9 undergarduite student to help put on the worlds second ever Brain Drone race the following year.</p>
       </div>
     </div>
+
     <div class="row">
       <div class="col s12 l4">
-          <img src="img/iot.jpg" alt="" class="responsive-img materialboxed">
+          <!--img src="img/iot.jpg" alt="" class="responsive-img materialboxed"-->
+          
+            <iframe class="responsive-img materialboxed" style='width:80%; height:100%' src="https://www.youtube.com/embed/tSRrcEFZhOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="indigo-text text-darken-4">IoT</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <h3 class="indigo-text text-darken-4">IoT</h3>
+        <p>I gained a passion for IoT and wanted to teach other students about the coolness of IoT. I partnered with the National Society of Black engineers gator chapter and produced a 3 part hands on workshop series on IoT.</p>
       </div>
     </div>
   </section>
 
+  <!--cards -->
+  <!--section class="container section">
+  <div class="row">
+
+	  <div class="card col s4">
+	    <div class="card-image waves-effect waves-block waves-light">
+	      <img class=" responsive-img materialboxed" src="img/bdr.jpg">
+	    </div>
+	    <div class="card-content">
+	      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+	      <p><a href="#">This is a link</a></p>
+	    </div>
+	    <div class="card-reveal">
+	      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+	      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	    </div>
+	  </div>
+
+	  <div class="card col s4">
+	    <div class="card-image waves-effect waves-block waves-light">
+	      <img class="activator responsive-img materialboxed" src="img/bdr.jpg">
+	    </div>
+	    <div class="card-content">
+	      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+	      <p><a href="#">This is a link</a></p>
+	    </div>
+	    <div class="card-reveal">
+	      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+	      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	    </div>
+  	</div>
+
+  	<div class="card col s4">
+	    <div class="card-image waves-effect waves-block waves-light">
+	      <img class="activator" src="img/bdr.jpg">
+	    </div>
+	    <div class="card-content">
+	      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+	      <p><a href="#">This is a link</a></p>
+	    </div>
+	    <div class="card-reveal">
+	      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+	      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	    </div>
+	  </div>
+	</div>
+</section -->
 	<!-- parallax -->
-  <div class="parallax-container">
+  <!--div class="parallax-container">
     <div class="parallax">
       <img src="img/ai-codes.jpg" alt="" class="responsive-img">
     </div>
-  </div>
-
+  </div-->
+   <div class="divider"></div>
     <!-- services / tabs -->
-  <section class="section container" id="services">
+  <!--section class="section container" id="services">
     <div class="row">
       <div class="col s12 l4">
         <h2 class="indigo-text text-darken-4">What I do..</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        <p>I received my bachelor’s degree from the University of Florida in Computer Engineering. I am now pursuing my PhD in computer science at the University of Florida. under Dr. Juan Gilbert in the Human Experience Research Lab. In 2019 I became a National Science Foundation Graduate Research Fellow and GEM fellow. My research interest includes Brain computer interfaces, Human computer/robotic interaction, and the Internet of Things.</p>
+        <p>I am currently a computer engineering Major at the University of Florida.</p>
+        <p>I do reaserch in Brain Computer Interface, Human computer/robotics interaction and IoT.</p>
       </div>
       <div class="col s12 l6 offset-l2">
         <!-- tabs -->
-        <ul class="tabs">
+        <!--ul class="tabs">
           <li class="tab col s6">
             <a href="#Mentor" class="active indigo-text text-darken-4">Mentor</a>
           </li>
@@ -109,18 +211,19 @@
         </ul>
         <div id="Mentor" class="col s12">
             <p class="flow-text indigo-text text-darken-4">Mentor</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+            <p>I currently mentor undergraduite CS and CE students at the University of Florida. I have experice with web Devlopment and Android devlopment which I teach to my mentees as well as data structures and Algorithms.</p>
+            <p>I also work with them on interview prep and perssonel development</p>
+
         </div>
         <div id="EngineeringServices" class="col s12">
             <p class="flow-text indigo-text text-darken-4">Engineering Services</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+            <p>I have expericen in both hardware and Software</p>
+            <p>I am both a web and android app developer and enjoy doing reaserch to produce scholarly articles</p>
         </div>
         </div>
       </div>
     </div>
-  </section>
+  </section-->
 
   <!-- parallax -->
   <div class="parallax-container">
@@ -132,14 +235,20 @@
   <!-- contact form -->
   <section class="section container" id="contact">
     <div class="row">
-      <div class="col s12 l5">
-        <h2 class="indigo-text text-darken-4">Get in Touch</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
-      </div>
-      <div class="col s12 l5 offset-l2">
+      <div class="col s12">
+                  <div class="content-item">
+                     <h2 class="indigo-text text-darken-4">Resume</h2>
+                    <iframe src="pdf/resume.pdf" width="100%" height="600px">
+                      This browser does not support PDFs. Please download the
+                      PDF to view it: <a href="pdf/resume.pdf">Download PDF</a>
+                    </iframe>
+                    <p>Last Updated: July 2019</p>
+                  </div>
+                </div>
+        </div>
+
+
+      <!--div class="col s12 l5 offset-l2">
         <form>
           <div class="input-field">
             <i class="material-icons prefix">email</i>
@@ -175,7 +284,7 @@
             <button class="btn">Submit</button>
           </div>
         </form>
-      </div>
+      </div-->
     </div>
   </section>
 
@@ -183,11 +292,11 @@
   <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <!--div class="col l6 s12">
           <h5>About Me</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-        </div>
+        </div-->
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
@@ -197,7 +306,7 @@
       </div>
     </div>
     <div class="footer-copyright grey darken-4">
-      <div class="container center-align">&copy; 2018 Jean Louis</div>
+      <div class="container center-align">&copy; 2019 Jean D Louis</div>
     </div>
   </footer>
 
